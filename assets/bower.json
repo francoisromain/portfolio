@@ -1,0 +1,21 @@
+{
+  "name": "sessun.com kirby",
+  "version": "0.1",
+  "main": [
+    "src/css/styles.css",
+    "src/js/script.js",
+    "src/img/sprite.img"
+  ],
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "normalize-css": "latest",
+    "masonry": "latest"
+  },
+  "devDependencies": {
+    "velocity": "latest",
+    "imagesloaded": "latest"
+  }
+}
