@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-decoration: none;
 } 
 
-h1, 
+h1,
 .xxl {
     @include adjust-font-size-to($base-font-size * $text-xxl, $text-baseline-xxl);
 }

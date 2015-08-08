@@ -1,9 +1,8 @@
 .DS_Store
 /site/accounts
 /thumbs/*
-/assets/.sass-cache
-/assets/node_modules
-assets/src/components/
+.sass-cache
+node_modules
 assets/dist/
 panel/
 kirby/
