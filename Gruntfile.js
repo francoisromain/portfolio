@@ -82,7 +82,7 @@ module.exports = function (grunt) {
     },
     watch: {
       dev: {
-        files: ['assets/src/scss/*.scss'],
+        files: ['assets/src/scss/*.scss', 'content/**/*', 'site/**/*'],
         tasks: ['styles:dev'],
         options: {
           livereload: true,
