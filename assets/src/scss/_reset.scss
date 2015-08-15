@@ -41,7 +41,7 @@ html {
  *    render text using sub-pixel anti-aliasing.
  */
 html {
-    font-size: $base-font-size / 16px * 1em; /* [1] */
+    font-size: $base-font-size / 16px * 1rem; /* [1] */
     line-height: $base-unit; /* [1] */
     overflow-y: scroll; /* [2] */
     min-height: 100%; /* [3] */
@@ -112,22 +112,6 @@ ins {
     border-bottom: 1px solid;
 }
 
-/*------------------------------------*\
-    #LISTS
-\*------------------------------------*/
-
-ul, ol, dd {
-    margin-left: $base-unit-l * $base-font-size;
-    margin-left: $base-unit-l * 1rem;
-}
-
-li {
-
-    > ul,
-    > ol {
-        margin-bottom: 0;
-    }
-}
 
 /*------------------------------------*\
     #IMAGES
@@ -140,12 +124,12 @@ li {
  *    elements when they are dropped into a page as-is.
  */
 img {
-    max-width: 100%; /* [1] */
-    font-style: italic; /* [2] */
-    vertical-align: middle; /* [3] */
-    height:auto;
-	outline: 0;
-	border: 0;
+  max-width: 100%; /* [1] */
+  font-style: italic; /* [2] */
+  vertical-align: middle; /* [3] */
+  height:auto;
+  outline: 0;
+  border: 0;
 }
 
 

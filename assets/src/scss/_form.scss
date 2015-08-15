@@ -6,16 +6,16 @@
 label {
 	cursor: pointer;
 	display: block;
-	margin-bottom: $base-unit-s * 1em;
+  margin-bottom: $base-unit-s * 1em;
 }
 
 input[type="text"], input[type="email"], input[type="search"], input[type="password"], input[type="tel"], select {
 	width: 100%;
 	display: block;
-	height: $base-unit-l * 1em;
-	padding: $base-unit-s * 1em;
+	height: $base-unit-l * 1rem;
+	padding: $base-unit-s * 1rem;
 	border: 0 none;
-	background-color: $base-color-bg; 
+	background-color: $color-base-bg; 
 	-webkit-appearance: none;
 	-moz-appearance: none; /* mobile firefox too! */
 }
@@ -26,15 +26,15 @@ select {
 	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMTJweCIgeT0iMHB4IiB3aWR0aD0iMjRweCIgaGVpZ2h0PSIzcHgiIHZpZXdCb3g9IjAgMCA2IDMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDYgMyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBvbHlnb24gcG9pbnRzPSI1Ljk5MiwwIDIuOTkyLDMgLTAuMDA4LDAgIi8+PC9zdmc+);
 	background-position: 100% center;
 	background-repeat: no-repeat;
-	padding: 0 $base-unit-s * 1em;
+	padding: 0 $base-unit-s * 1rem;
 }
 
 textarea {
 	width: 100%;
 	display: block;
-	padding: $base-unit-xs * 1em $base-unit-s * 1em;
-	margin-bottom: $base-unit * 1em;
+	padding: $base-unit-xs * 1rem $base-unit-s * 1rem;
 	height: auto;
+  margin-bottom: $base-unit * 1em;
 	border: 0 none;
 	border-top: 1px dotted #bcb9af;
 }

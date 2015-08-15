@@ -14,13 +14,14 @@
 	display: none;
 	visibility: hidden;
 }
-
-.right {
-	float: right; 
-}
-
 .left {
-	float: left; 
+  float: left;
+}
+.right {
+	float: right;
+}
+.center {
+  text-align: center;
 }
 
 .capitalize {

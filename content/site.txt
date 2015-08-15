@@ -1,17 +1,21 @@
-Title: Kirby Starterkit
+Title: François Romain
 
 ----
 
-Author: Bastian Allgeier GmbH
+Subtitle: software engineer & designer
 
 ----
 
-Description: This is Kirby's Starterkit.
+Author: François Romain
 
 ----
 
-Keywords: Kirby, CMS, file-based
+Description: software engineer & graphic designer
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Keywords: software engineer, graphic designer
+
+----
+
+Copyright: © (date: Year)

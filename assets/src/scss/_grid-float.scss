@@ -1,5 +1,13 @@
 // responsive breakpoints	// $columns		// ($col-width * $columns) - $gutter + ($container-padding * 2)
 
+// grid settings
+
+$gutter:    $base-unit;
+$container-padding: $base-unit;
+$col-max:   6;
+$col-min:   2; 
+$col-width: 15;   // 240px
+
 $screens: (	
   xxs:			1, 	// 256px
 	xs: 			2, 	// 512px
@@ -16,28 +24,55 @@ $screens: (
 	margin-right: auto;
 	margin-left: auto;
 }
-
 .grid {
 	margin-right: -$gutter * 1rem;
+	clear: both;
+	&:after {
+    content: "";
+    display: table;
+    clear: both;
+	}
 }
+
+%bloc {
+	float: left; 
+}
+
 .bloc {
 	margin-right: $gutter * 1rem;
-  flex-basis: 100%;
+  display: block;
 }
+
+.bloc-left {
+	@extend %bloc;
+}
+
 .bloc-n {
 	width: auto;
 	min-width: ($col-width - $gutter) * 1rem;
+	@extend %bloc; 
 }
 
+$one-half: ($col-width / 2) - $gutter  * 1rem;
 $one-third: ($col-width / 3) - $gutter  * 1rem;
 $two-third: ($col-width * 2 / 3) - $gutter  * 1rem;
 
+.bloc-one-half { 
+  width: $one-half; 
+  @extend %bloc; 
+}
+
 .bloc-one-third {	
 	width: $one-third; 
+	height: $one-third; 
+  text-align: center;
+	margin-right: $gutter * 1rem;
+  float: left;
 }
 
 .bloc-two-third {
-	width: $two-third; 
+	width: 27.9%; 
+	@extend %bloc; 
 }
 
 $screen-s-width: $col-min * $col-width - $gutter + (2 * $container-padding) + $base-unit * 1rem; 
@@ -52,10 +87,6 @@ $screen-s-width: $col-min * $col-width - $gutter + (2 * $container-padding) + $b
 		margin-left: -1%; 
 		margin-top: -1%;
 	}
-  .grid {
-    display: flex;
-    flex-wrap: wrap;
-  }
 }
 
 @each $screen-name, $columns in $screens {
@@ -71,22 +102,23 @@ $screen-s-width: $col-min * $col-width - $gutter + (2 * $container-padding) + $b
 				display: inherit;
 				visibility: visible;
 			}
-
-      @for $i from 1 through $col-max {
-        .bloc-#{$screen-name}-#{$i} {
-          flex-basis: main-value;
-        }
-        @if ($i > 1) {
-          @for $j from 1 through $i - 1 {
-            .bloc-#{$screen-name}-#{$i}-#{$j} {
-              flex-basis: main-value;
-            }
-          }
-        }
-      }
+			
+			@for $i from 1 through $col-max {
+				.bloc-#{$screen-name}-#{$i} {
+					float: left;
+				}
+				@if ($i > 1) {
+					@for $j from 1 through $i - 1 {
+						.bloc-#{$screen-name}-#{$i}-#{$j} {
+							float: left; 
+						}
+					}
+				}
+			}
+			
 			
 			.#{$screen-name}-right {
-				margin-left: auto;
+				float: right; 
 			}
 				
 			@each $screen-name-n, $columns-n in $screens { 

@@ -1,33 +1,74 @@
-<?php snippet('header') ?>
+<? snippet('header') ?>
 
-  <main class="main" role="main">
 
-    <h1><?php echo $page->title()->html() ?></h1>
 
-    <ul class="meta cf">
-      <li><b>Year:</b> <time datetime="<?php echo $page->date('c') ?>"><?php echo $page->date('Y', 'year') ?></time></li>
-      <li><b>Tags:</b> <?php echo $page->tags() ?></li>
-    </ul>
+  <main role="main">
 
-    <div class="text">
-      <?php echo $page->text()->kirbytext() ?>
+  <div class="container">
+    <hr />
+    <div class="grid">
+      <nav  class="bloc bloc-s-1 right" role="navigation">
+        <div class="grid">
+<? if($prev = $page->prevVisible()) { ?>
+          <a class="bloc-one-third" href="<?= $prev->url() ?>"><div class="margin-top-s">&larr;</div></a>
+<? } else { ?>
+          <span class="bloc-one-third"></span>
+<? } ?>
+<? if($next = $page->nextVisible()) { ?>
+          <a  class="bloc-one-third" href="<?= $next->url() ?>"><div class="margin-top-s">&rarr;</div></a>
+<? } else { ?>
+          <span class="bloc-one-third"></span>
+<? } ?>
+          <a class="bloc-one-third" href="<?= $page->parent()->url() ?>"><div class="margin-top-s">&uarr;</div></a>
+      </nav>
+      <div class="bloc bloc-s-1">
+        <h1 class="margin-top-s"><?= $page->title()->html() ?></h1>
+      </div>
+    </div>
+    
+  </div>
 
-      <?php foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
+  <div class="main-picture margin-bottom">
+    
+
+  </div>
+
+  <div class="container">
+  <div class="grid">
+    <div class="bloc bloc-s-1">
+      <ul class="list-sans">
+        <li>
+          <h6>date</h6>
+          <time datetime="<?= $page->date('Y-m') ?>"><?= $page->date('Y.m.d') ?></time>
+        </li>
+        <li>
+          <h6>technologies</h6>
+          <p><?= $page->technologies() ?></p>
+        </li>
+        <li>
+          <h6>role</h6>
+          <p><?= $page->role() ?></p>
+        </li>
+        <li>
+          <h6>link</h6>
+          <p><?= $page->link() ?></p>
+        </li>
+      </ul>
+    </div>
+    <div class="bloc bloc-s-4-1">
+      <p><b><?= $page->description()->html() ?></b></p>
+      <?= $page->keypoints()->kirbytext() ?>
+      <? foreach($page->images()->sortBy('sort', 'asc') as $image): ?>
       <figure>
-        <img src="<?php echo $image->url() ?>" alt="<?php echo $page->title()->html() ?>">
+        <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>">
       </figure>
-      <?php endforeach ?>
+      <? endforeach ?>
     </div>
 
-    <nav class="nextprev cf" role="navigation">
-      <?php if($prev = $page->prevVisible()): ?>
-      <a class="prev" href="<?php echo $prev->url() ?>">&larr; previous</a>
-      <?php endif ?>
-      <?php if($next = $page->nextVisible()): ?>
-      <a class="next" href="<?php echo $next->url() ?>">next &rarr;</a>
-      <?php endif ?>
-    </nav>
+
+
+  </div>
 
   </main>
 
-<?php snippet('footer') ?>
+<? snippet('footer') ?>

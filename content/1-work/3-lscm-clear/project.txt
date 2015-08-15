@@ -1,0 +1,33 @@
+Title: LSCM Clear
+
+----
+
+Date: 2015.07.15
+
+----
+
+Type: webapp
+
+----
+
+Link: (link:http://github.com/francoisromain/lscm-clear)
+
+----
+
+Technologies: Angular, Angular-Strap, Bootstrap, D3, NvD3, SASS, Grunt, Bower 
+
+----
+
+Description: Clear is a supply chain management application for LSCM, providing services for major oil companies operating in Nigeria. The application tracks orders, shipments and any piece of hardware used in the building of off-shore rigs, from factories worldwide to the assembly location. 
+
+----
+
+Keypoints: 
+- The single page application connects to a REST API. 
+- The responsive interface is optimized for small screen.
+- Many reports and KPI are displayed with D3 and NvD3.
+- In addition, a native android mobile application allows the operators,  working in warehouses with no internet coverage, to scan QR code and transmit data via SMS. 
+
+----
+
+Role: design, development

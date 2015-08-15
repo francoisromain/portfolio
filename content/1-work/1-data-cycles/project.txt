@@ -1,0 +1,35 @@
+Title: Data cycles
+
+----
+
+Date: 2015-08-11
+
+----
+
+Location: San Francisco, California
+
+----
+
+Type: datavisualization
+
+----
+
+Link: http://data-cycles.com
+
+----
+
+Technologies: D3, D3 Geo, React, Leaflet, Mapzen vector tiles 
+
+----
+
+Description: Data Cycles uses a year’s worth of Bay Area Bike Share data to create a simulated real-time visualization, statistics and predictions.
+
+----
+
+Keypoints: 
+- An interactive animated map built with D3 displays between 500 and 1000 animated elements in one page. 
+- About 30 millions documents stored in database (informations about every bike trips over a one year period).
+
+----
+
+Role: design,  programming

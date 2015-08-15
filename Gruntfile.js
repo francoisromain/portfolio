@@ -45,6 +45,8 @@ module.exports = function (grunt) {
           environment: 'production',
           outputStyle: 'compressed',
           noLineComments: true,
+          require: 'breakpoint',
+          require: 'susy',
           force: true
         }
       },
@@ -52,8 +54,10 @@ module.exports = function (grunt) {
         options: {
           sassDir: 'assets/src/scss',
           specify: 'assets/src/scss/styles.scss',
-          cssDir: 'assets/dist',
+          cssDir: 'assets/dist/css',
           noLineComments: true,
+          require: 'breakpoint',
+          require: 'susy',
           force: true
         }
       }

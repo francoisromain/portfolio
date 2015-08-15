@@ -7,17 +7,17 @@ a {
   @include link-colors($color-dark, $color-brand, $color-brand, $color-dark, $color-brand)
 }
 
-@include sticky-footer($base-unit-xl * 1em, ".page", ".push-footer", ".footer");
+@include sticky-footer($base-unit-xl * 1rem, ".page", ".push-footer", ".footer");
 
 html {
-	background-color: $base-color-bg;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: $base-color-text;
+	background-color: $color-base-bg;
+  font-family: 'Roboto', sans-serif;
+  color: $color-base-text;
 }
 
 h1, .xxl {
-  letter-spacing: -0.04em;
-  font-weight: 300; 
+  font-weight: 700; 
+
 }
 
 h2, .xl {
@@ -25,37 +25,21 @@ h2, .xl {
   font-weight: 700; 
 }
 
-h4 {
-  font-weight: 700; 
-  letter-spacing: -0.03em;
+h4, .m {
+
+}
+h5, .s, h6, .xs  {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
 }
 
 blockquote {
 	color: $color-dark;
 }
 
-h6, .xs, .btn {
-	text-transform: uppercase;
-	letter-spacing: 0.1em;
-	font-weight: 700;
-}
-
 b, strong, .strong {
   font-weight: 700;
-}
-
-.title-sub, .title {
-  float: left; 
-}
-
-.title-sub {
-  color: $color-brand;
-  border-left: $color-neutral dotted 1px;
-  padding-left: 1.5em;
-  margin-left: 1.5em;
-  line-height: 1.4em;
-  padding-top: 2em;
-  padding-bottom: 1.25em;
 }
 
 .absolute {
@@ -68,18 +52,17 @@ b, strong, .strong {
 }
 
 .height-unit-l {
-	height: $base-unit * $base-unit-l * 1em;
+	height: $base-unit * $base-unit-l * 1rem;
 }
 
 .margin-left-s {
-	margin-left: $base-unit-s * 1em; 
+	margin-left: $base-unit-s * 1rem; 
 }
 
 hr {
 	border: 0;
 	height: 0;
 	border-top: 1px dotted $color-neutral;
-	border-bottom: 1px dotted $color-clear;
 	margin-bottom: $base-unit-xs - $base-unit-xxs * 1rem;
 }
 
@@ -97,7 +80,6 @@ hr {
 	text-align: center;
 	color: white;
 	background-color: #bcb9af;
-	float: left;
 }
 
 .label-color {
@@ -106,7 +88,6 @@ hr {
 	color: white;
 	background-color: #9b4458;
 	margin-bottom: 0.75rem;
-	float: left;
 }
 
 .label-small-color {
@@ -129,24 +110,70 @@ hr {
 #content, #content img {
 	opacity: 1; 
 }
+.logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 1.5rem;
+}
 
-nav {
-  margin-bottom: 0.5em;
+
+.menu a {
+  padding: $base-unit-s * 1rem  $base-unit-s * 1rem  $base-unit-s * 1rem (7.5 - $base-unit-xxs) * 1rem;
   display: block;
-  border-left: $color-neutral dotted 1px;
+  border-left: $base-unit-xxs * 1rem solid $color-base-bg;
+  margin-right: 1.5em;
 }
 
-nav > .btn {
-  text-align: left;
-  padding-top: 4.25em;
-  width: 12em;
-  color: $color-dark;
-  border-right: $color-neutral dotted 1px;
-}
-
-nav .btn.active, nav .btn.active:hover {
+.menu a.active, .menu a:hover {
   color: $color-brand;
-  background-color: $color-clear;
+  border-left: $base-unit-xxs * 1rem solid $color-clear;
+}
+
+.menu a.active, .menu a.active:hover {
+  color: $color-brand;
+  border-left: $base-unit-xxs * 1rem solid $color-brand;
+}
+
+@media (min-width: 48rem) {
+  .menu {
+    padding-left: 7.5rem;
+  }
+  .menu a {
+    width: 6 * 1rem;
+    float: left;
+    padding-left: 0;
+    padding-top: ($base-unit-s - $base-unit-xxs) * 1rem;
+    border-top: $base-unit-xxs * 1rem solid $color-base-bg;
+    border-left: 0 none $color-base-bg;
+  }
+  .menu a:hover {
+    border-top: $base-unit-xxs * 1rem solid $color-clear;
+    border-left: 0 none $color-base-bg;
+  }
+  .menu a.active, .menu a.active:hover {
+    color: $color-brand;
+    border-top: $base-unit-xxs * 1rem solid $color-brand;
+    border-left: 0 none $color-base-bg;
+  }
+}
+
+@media (min-width: 63rem) {
+  .menu {
+    float: right;
+    padding-left: 0;
+  }
+  .menu a {
+    padding-top: ($base-unit-xl - $base-unit-xxs) * 1rem;
+  }
+  .menu a.active, .menu a.active:hover {
+    color: $color-brand;
+  }
+}
+
+
+.main-picture {
+  height: 512px;
+  background-color: $color-dark;
 }
 
 .circle {

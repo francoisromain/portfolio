@@ -10,17 +10,17 @@ h1, h2, h3, h4, h5, h6 {
 
 h1,
 .xxl {
-    @include adjust-font-size-to($base-font-size * $text-xxl, $text-baseline-xxl);
+    @include adjust-font-size-to($base-font-size * $text, $text-baseline);
 }
 
 h2, 
 .xl {
-    @include adjust-font-size-to($base-font-size * $text-xl, $text-baseline-xl);
+    @include adjust-font-size-to($base-font-size * $text, $text-baseline);
 }
 
 h3, 
 .l {
-    @include adjust-font-size-to($base-font-size * $text-l, $text-baseline-l);
+    @include adjust-font-size-to($base-font-size * $text, $text-baseline);
 }
 
 h4, 
@@ -57,9 +57,23 @@ blockquote {
     padding-right: $base-unit * 1rem; 
 }
 
+
 /*------------------------------------*\
     #LISTS
 \*------------------------------------*/
+
+ul, ol, dd {
+    margin-left: $base-unit-l * $base-font-size;
+    margin-left: $base-unit-l * 1rem;
+}
+
+li {
+
+    > ul,
+    > ol {
+        margin-bottom: 0;
+    }
+}
 
 .list-sans {
     margin:  0;
@@ -73,12 +87,10 @@ blockquote {
     list-style: none; 
 
     > li {
-        margin-right: $base-unit-xs * 1em;
         margin-bottom: $base-unit-xs * 1em;
         float: left;
     }
-
-}
+} 
 
 ol {
 	list-style-type:decimal;
