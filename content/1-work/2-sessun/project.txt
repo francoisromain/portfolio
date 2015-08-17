@@ -14,7 +14,8 @@ Type: website, e-commerce
 
 ----
 
-Link: http://sessun.com
+Link: 
+- (link: http://sessun.com text: sessun.com)
 
 
 ----
@@ -27,14 +28,14 @@ Technologies: Kirby, Prestashop, jQuery, Velocity, Grunt, Bower, SASS/Compass, S
 
 ----
 
-Description: Sessun.com is a fully-featured website for the fashion brand, including catalogue, e-commerce, blog, e-mailing and statistics, available in french and english.
+Description: Sessun.com is a fully-featured website for a fashion brand, including catalogue, e-commerce, blog, e-mailing and statistics, available in french and english.
 
 ---- 
 
 Keypoints: 
 
-- The complete solution relies only on open-source and self-hosted technologies: Kirby for the catalog and blog, Prestashop for the e-commerce, and Piwik for the statistics. 
-- The website offers a unified experience from mobile to desktop thanks to a custom responsive layout. 
-- A special attention is made to optimize loading time (reducing files size and number of http requests) by rewriting all Prestashop default javascript and sharing assets with Kirby.
+- The complete solution relies only on open-source and self-hosted technologies. 
+- A custom responsive layout offers a unified experience from mobile to desktop. 
+- A special attention is made to optimize loading time (reducing files size and number of http requests) by rewriting all Prestashop javascript code and sharing assets with Kirby.
 - A pre-production environnement allows administrators of the website to safely test and validate modifications before publication.
 - The e-mailing system stores data locally while e-mails are sent individually using Amazon SES (reliable and trusted as non-spam). 

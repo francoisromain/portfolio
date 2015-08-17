@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     'node_modules/velocity-animate/velocity.min.js',
     'node_modules/imagesloaded/imagesloaded.pkgd.js',
     'node_modules/masonry-layout/dist/masonry.pkgd.js',
-    'node_modules/pace/pace.js'
+    'assets/src/js/glide.js'
   ];
   var jsDist = 'assets/dist/js/lib.js';
 
@@ -27,12 +27,6 @@ module.exports = function (grunt) {
           dest: 'assets/dist/css/fonts/',
           flatten: true,
           filter: 'isFile'
-        }, {
-          expand: true,
-          src: ['assets/src/js/sessun.js'],
-          dest: 'assets/dist/js/',
-          flatten: true,
-          filter: 'isFile'
         }]
       }
     },
@@ -45,8 +39,7 @@ module.exports = function (grunt) {
           environment: 'production',
           outputStyle: 'compressed',
           noLineComments: true,
-          require: 'breakpoint',
-          require: 'susy',
+          require: ['breakpoint', 'susy'],
           force: true
         }
       },
@@ -56,8 +49,7 @@ module.exports = function (grunt) {
           specify: 'assets/src/scss/styles.scss',
           cssDir: 'assets/dist/css',
           noLineComments: true,
-          require: 'breakpoint',
-          require: 'susy',
+          require: ['breakpoint', 'susy'],
           force: true
         }
       }
@@ -67,12 +59,11 @@ module.exports = function (grunt) {
         separator: '\n'
       },
       dev: {
-        src: jsSrc,
-        dest: jsDist
-      },
-      dist: {
-        src: jsSrc,
-        dest: jsDist
+        files: {
+          'assets/dist/js/lib.js': jsSrc,
+          'assets/dist/js/scripts.js': ['assets/src/js/scripts.js'], 
+          'assets/dist/js/pace.js': 'node_modules/pace/pace.min.js'
+        }
       }
     },
     uglify: {
@@ -80,14 +71,17 @@ module.exports = function (grunt) {
         separator: ';'
       },
       dist: {
-        src: jsSrc,
-        dest: jsDist
+        files: {
+          'assets/dist/js/lib.js': jsSrc,
+          'assets/dist/js/scripts.js': ['assets/src/js/scripts.js'], 
+          'assets/dist/js/pace.js': 'node_modules/pace/pace.min.js'
+        }
       }
     },
     watch: {
       dev: {
-        files: ['assets/src/scss/*.scss', 'content/**/*', 'site/**/*'],
-        tasks: ['styles:dev'],
+        files: ['assets/src/**/*', 'content/**/*', 'site/**/*'],
+        tasks: ['styles:dev', 'scripts:dev'],
         options: {
           livereload: true,
         }

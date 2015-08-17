@@ -63,16 +63,27 @@ blockquote {
 \*------------------------------------*/
 
 ul, ol, dd {
-    margin-left: $base-unit-l * $base-font-size;
-    margin-left: $base-unit-l * 1rem;
+    margin-left: $base-unit * $base-font-size;
+    margin-left: $base-unit * 1rem;
 }
 
 li {
 
-    > ul,
-    > ol {
-        margin-bottom: 0;
-    }
+  > ul,
+  > ol {
+      margin-bottom: 0;
+  }
+}
+
+ul {  
+  list-style: none;  
+  text-indent: -1.5em;
+} 
+
+li:before { 
+  content: "―";
+  margin-right: .5rem;
+  color: $color-neutral;
 }
 
 .list-sans {

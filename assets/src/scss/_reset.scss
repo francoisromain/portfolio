@@ -85,8 +85,8 @@ blockquote, p, address,
 table,
 fieldset, figure,
 pre, hr {
-    margin-bottom: $base-unit-s * $base-font-size;
-    margin-bottom: $base-unit-s * 1rem;
+    // margin-bottom: $base-unit-s * $base-font-size;
+    // margin-bottom: $base-unit-s * 1rem;
 }
 
 /**

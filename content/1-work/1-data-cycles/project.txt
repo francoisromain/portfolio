@@ -14,7 +14,8 @@ Type: datavisualization
 
 ----
 
-Link: http://data-cycles.com
+Link: 
+- (link: http://data-cycles.com text: data-cycles.com)
 
 ----
 

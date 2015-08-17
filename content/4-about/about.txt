@@ -1,16 +1,28 @@
-Title: About
+Title: about
 
 ----
 
-Text: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+Text: I build websites and web-applications for ten years, initially as a designer and then also as a software engineer. This website showcases a selection of projects I have worked on, either as a contractor or within agencies. 
 
-## Lorem Ipsum
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
+----
 
-(image: about.jpg)
+Engineering: JavaScript, D3, Angular, Backbone, Leaflet, Node / Express, MongoDB, jQuery, Grunt, Gulp, Browserify, Webpack, CSS, SASS / Compass, Git, Pair Programming.
 
-### Lorem Ipsum
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+----
 
-#### Lorem Ipsum
-In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+Design: UX and UI design, brand identity, typography, grids, data-visualization, Adobe Creative Suite (Ai, Ps, Id, Ae), Cinema 4d.
+
+----
+
+Contact: 
+- (email: francoisromain@gmail.com text: Gmail)
+- [Skype](skype:francoisromain?userinfo)
+
+----
+
+Links:
+- (link: http://twitter.com/francoisromain text: Twitter)
+- (link: http://github.com/francoisromain text: Github)
+- (link: http://instapaper.com/p/francoisromain text: Instapaper)
+- (link: http://flickr.com/francois-romain text: Flickr)
+- (link: http://linkedin.com/in/francoisromain text: Linkedin)

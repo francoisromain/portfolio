@@ -8,6 +8,15 @@
   <meta name="keywords" content="<?= $site->keywords()->html() ?>">
 
   <?= css('assets/dist/css/styles.css') ?>
+  <script type="text/javascript">
+    paceOptions = {
+      "target": ".loader",
+      "minTime": 100000
+    }
+  </script>
+  <?= js(array(
+  'assets/dist/js/pace.js'
+  )) ?>
 
 </head>
 <body>
@@ -17,7 +26,7 @@
     <header role="banner" class="grid">
       <div class="bloc bloc-m-2">
         <div class="grid">
-          <div class="bloc bloc-one-half center"><a href="<?= url() ?>"><img src="<?= url('assets/dist/img/fr-logo.svg') ?>" alt="francois romain logo" width="64px" height="64px" class="img-logo margin-top-s"/></a></div>
+          <div class="bloc bloc-one-half bloc-s-1 center"><a href="<?= url() ?>"><img src="<?= url('assets/dist/img/fr-logo.svg') ?>" alt="francois romain logo" width="64px" height="64px" class="img-logo margin-top-s"/></a></div>
           <div class="bloc-n">
             <h1 class="margin-top margin-bottom-0"><a href="<?= url() ?>"><?= $site->title() ?></a></h1>
             <h4><?= $site->subtitle() ?></h4>
@@ -29,5 +38,6 @@
         <? snippet('menu') ?>
       </nav>
     </header>
+    <hr />
   </div>
   

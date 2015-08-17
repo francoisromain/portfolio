@@ -32,6 +32,9 @@ h5, .s, h6, .xs  {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 700;
+  color: $color-neutral;
+  margin-top: $base-unit * $base-font-size;
+  margin-top: $base-unit * 1rem;
 }
 
 blockquote {
@@ -46,9 +49,12 @@ b, strong, .strong {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
 }
 .height-full {
 	min-height: 100%;
+  position: relative;
 }
 
 .height-unit-l {
@@ -67,12 +73,12 @@ hr {
 }
 
 .pad {
-	padding: 16px;
+	padding: 2rem;
 }
 
 .pad-h {
-	padding-right: 16px;
-	padding-left: 16px;
+	padding-right: 2rem;
+	padding-left: 2rem;
 }
 
 .label {
@@ -116,17 +122,20 @@ hr {
   margin-right: 1.5rem;
 }
 
+.title {
+  float: left;
+}
 
 .menu a {
   padding: $base-unit-s * 1rem  $base-unit-s * 1rem  $base-unit-s * 1rem (7.5 - $base-unit-xxs) * 1rem;
   display: block;
-  border-left: $base-unit-xxs * 1rem solid $color-base-bg;
+  border-left: $base-unit-xxs * 1rem solid transparent;
   margin-right: 1.5em;
 }
 
 .menu a.active, .menu a:hover {
-  color: $color-brand;
-  border-left: $base-unit-xxs * 1rem solid $color-clear;
+  color: $color-dark;
+  border-left: $base-unit-xxs * 1rem solid $color-dark;
 }
 
 .menu a.active, .menu a.active:hover {
@@ -135,24 +144,25 @@ hr {
 }
 
 @media (min-width: 48rem) {
-  .menu {
-    padding-left: 7.5rem;
+
+  .menu, .title {
+    padding-left: 15rem;
   }
   .menu a {
     width: 6 * 1rem;
     float: left;
     padding-left: 0;
-    padding-top: ($base-unit-s - $base-unit-xxs) * 1rem;
-    border-top: $base-unit-xxs * 1rem solid $color-base-bg;
+    margin-bottom: - $base-unit-xxs * 1rem;
+    border-bottom: $base-unit-xxs * 1rem solid transparent;
     border-left: 0 none $color-base-bg;
   }
   .menu a:hover {
-    border-top: $base-unit-xxs * 1rem solid $color-clear;
+    border-bottom: $base-unit-xxs * 1rem solid $color-dark;
     border-left: 0 none $color-base-bg;
   }
   .menu a.active, .menu a.active:hover {
     color: $color-brand;
-    border-top: $base-unit-xxs * 1rem solid $color-brand;
+    border-bottom: $base-unit-xxs * 1rem solid $color-brand;
     border-left: 0 none $color-base-bg;
   }
 }
@@ -163,7 +173,7 @@ hr {
     padding-left: 0;
   }
   .menu a {
-    padding-top: ($base-unit-xl - $base-unit-xxs) * 1rem;
+    padding-top: $base-unit-xl * 1rem;
   }
   .menu a.active, .menu a.active:hover {
     color: $color-brand;
@@ -172,8 +182,30 @@ hr {
 
 
 .main-picture {
-  height: 512px;
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+  -webkit-box-shadow: inset 0 -0.5em 2em 0 rgba(0,0,0,0.25);    
+     -moz-box-shadow: inset 0 -0.5em 2em 0 rgba(0,0,0,0.25);
+          box-shadow: inset 0 -0.5em 2em 0 rgba(0,0,0,0.25);
+}
+
+.main-picture img {
+  opacity: 0;
+  position: relative;
+  z-index: -1;
+  // box-shadow: 2em 2em 4em 0 rgba(0, 0, 0, 0.25);
+}
+.main-picture .bg {
   background-color: $color-dark;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
 }
 
 .circle {

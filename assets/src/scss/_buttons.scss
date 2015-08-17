@@ -76,27 +76,27 @@
 }
 
 .btn-s {
-    padding:         $base-unit-xs * 1rem  $base-unit-xs * 2 * 1rem;
+    padding:            $base-unit-xs * 1rem  $base-unit-xs * 2 * 1rem;
 }
 
 .btn-m {
-  padding:         $base-unit-s  * 1rem  $base-unit-s * 2 * 1rem; 
+  padding:              $base-unit-s  * 1rem  $base-unit-s * 2 * 1rem; 
 }
 
 .btn-l {
-    padding:         $base-unit-m * 1rem  $base-unit-m * 2 * 1rem;
+    padding:            $base-unit-m * 1rem  $base-unit-m * 2 * 1rem;
 }
 
 .btn-border {
-  border: $btn-b-width * 1rem $btn-b-style $btn-b-color-border;
-  background-color:    $btn-b-color-bg;
-  color:           $btn-b-color;
+  border: $btn-b-width * 1rem $btn-b-style rgba($btn-b-color-border, 0.2);
+  background-color:     $btn-b-color-bg;
+  color:                $btn-b-color;
   &:hover,
   &:active,
   &:focus {
-      color:         $btn-b-active-color;
-      background-color:  $btn-b-active-color-bg;
-      border-color:    $btn-b-active-color-border;
+      color:            $btn-b-active-color;
+      background-color: $btn-b-active-color-bg;
+      border-color:     $btn-b-active-color-border;
   }
 }
 
