@@ -1,0 +1,27 @@
+Title: Niger Énergie Services
+
+----
+
+Date: 2013-01-31
+
+----
+
+Type: website, animation
+
+----
+
+Link: 
+- (link:https://vimeo.com/135817776 text: animation on Vimeo)
+- (link:https://nigerenergies.com text: nigerenergies.com)
+
+----
+
+Technologies: Cinema4d, Adobe After Effects, Html, Sass / Bootstrap, jQuery 
+
+----
+
+Description: Niger Énergie Services supports organisations and companies wishing to develop their businesses in Niger. I created all their communication assets: logo, 3D animation, website and printed documents.
+
+----
+
+Role: brand identity, design, 3D, animation, development

@@ -35,10 +35,7 @@
       <div class="glide__track">
 <? foreach($page->images()->filterBy('filename', '*=', '--')->sortBy('sort', 'asc') as $image): ?>    
         <div class="glide__slide">
-          <div class="pad">
             <img src="<?= $image->url() ?>" alt="<?= $page->title()->html() ?>">
-            
-          </div>
         </div>
 <? endforeach ?>
       </div>
@@ -52,12 +49,16 @@
       <div class="bloc bloc-s-1">
         <h6>date</h6>
         <time datetime="<?= $page->date('Y-m') ?>"><?= $page->date('Y.m.d') ?></time>
-        <h6>technologies</h6>
-        <?= $page->technologies()->kirbytext() ?>
         <h6>role</h6>
         <?= $page->role()->kirbytext() ?>
+        <? if (!$page->technologies()->empty()) { ?>
+        <h6>technologies</h6>
+        <?= $page->technologies()->kirbytext() ?>
+        <? } ?>
+        <? if (!$page->link()->empty()) { ?>
         <h6>link</h6>
         <?= $page->link()->kirbytext() ?>
+        <? } ?>
       </div>
       <div class="bloc bloc-s-4-1 margin-top">
         <p class="margin-bottom"><b><?= $page->description()->html() ?></b></p>

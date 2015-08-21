@@ -1,0 +1,31 @@
+Title: Fabien Capéran
+
+----
+
+Date: 2012-04-15
+
+----
+
+Type: website
+
+----
+
+Link: 
+- (link:http://fabiencaperan.com text: fabiencaperan.com)
+
+----
+
+Technologies: Wordpress, jQuery 
+
+----
+
+Description: Portfolio website of the product designer Fabien Capéran, available in english and french.
+
+----
+
+Keypoints: 
+- The responsive interface is optimized for all screen sizes, from mobile to desktop.
+
+----
+
+Role: design, development

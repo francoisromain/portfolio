@@ -1,4 +1,4 @@
-Title: Data cycles
+Title: Data Cycles
 
 ----
 
@@ -23,14 +23,14 @@ Technologies: D3, D3 Geo, React, Leaflet, Mapzen vector tiles
 
 ----
 
-Description: Data Cycles uses a year’s worth of Bay Area Bike Share data to create a simulated real-time visualization, statistics and predictions.
+Description: Data Cycles displays a simulated real-time visualization, as well as statistics and predictive analytics, using a year’s worth of Bay Area Bike Share data. Four people worked on this project, and my role was to design and develop the interactive map with D3 and integrate the front-end. 
 
 ----
 
 Keypoints: 
-- An interactive animated map built with D3 displays between 500 and 1000 animated elements in one page. 
-- About 30 millions documents stored in database (informations about every bike trips over a one year period).
+- An interactive animated map built with D3 displays between 500 and 1000 animated elements on one page. 
+- Approximately 30 million records stored in database (information about every bike trip over a one-year period).
 
 ----
 
-Role: design,  programming
+Role: design,  development

@@ -1,0 +1,25 @@
+Title: Piaget
+
+----
+
+Date: 2010-09-01
+
+----
+
+Type: website
+
+
+----
+
+Description: During a couple of years, I worked on most the web projects of Piaget, the swiss watches and jewelry maker, including promotional films, animations and their main website. A great achievement was to convince them to switch from Flash to HTML for their new international website, which, back in 2009, was a bold decision for a luxury brand. During almost a year, I helped them to specify their need, designed the website and worked closely with our engineering team to define the new architecture. 
+
+----
+
+Keypoints:
+- The website is available in nine languages. 
+- The catalog showcases about 400 pieces and the store finder about 500 stores. 
+- The website administration allow a team to translate the content and specific administrators can then publish it on twelve different geographical areas.
+
+----
+
+Role: strategy, design, specifications

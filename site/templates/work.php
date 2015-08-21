@@ -1,7 +1,7 @@
 <? snippet('header') ?>
   <main class="container" role="main">
     <div class="grid">
-      <? foreach(page('work')->children()->visible()->limit(3) as $project): ?>
+      <? foreach(page('work')->children()->visible() as $project): ?>
       <div class="bloc bloc-s-1">
         <h2 class="margin-top-s margin-bottom-s"><a href="<?= $project->url() ?>"><?= $project->title()->html() ?></a></h2>
         <? if($image = $project->images()->filterBy('filename', '*=', 'thumb')->sortBy('sort', 'asc')->first()): ?>

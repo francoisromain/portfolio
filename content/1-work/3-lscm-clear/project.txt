@@ -19,15 +19,15 @@ Technologies: Angular, Angular-Strap, Bootstrap, D3, NvD3, SASS, Grunt, Bower
 
 ----
 
-Description: LSCM provides supply chain management services for major oil companies operating in Nigeria. The Clear application supports their business and  tracks orders, shipments, boxes and any piece of hardware used in the building of off-shore rigs, from factories worldwide to the assembly location. 
+Description: LSCM provides supply chain management services for major oil companies operating in Nigeria. The Clear application supports their business and tracks orders, shipments, boxes and any piece of hardware used in the building of off-shore rigs, from factories worldwide to the assembly location. I designed and developed the single page application, contributed to define the REST API and designed the Android application. 
 
 ----
 
 Keypoints: 
-- The single page application connects to a REST API for the operators and the clients to follow and update the tracking informations. 
+- The single-page application allows operators and clients to follow and update tracking informations.
 - The responsive interface is optimized for all screen sizes, from mobile to desktop, and also TV screens which display dashboards inside control rooms.
-- Many KPI and graphs are generated with D3 and NvD3.
-- In addition, a native android mobile application allows the operators,  working in warehouses with no internet coverage, to scan QR code and transmit data via SMS. 
+- Graphs and Key Performance Indicators (KPIs) are generated using D3 and NvD3.
+- A native Android mobile application allows operators, working in warehouses with no Internet coverage, to scan QR codes and transmit data via SMS.
 
 ----
 

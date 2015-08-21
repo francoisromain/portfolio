@@ -2,7 +2,7 @@ Title: about
 
 ----
 
-Text: I build websites and web-applications for ten years, initially as a designer and then also as a software engineer. This website showcases a selection of projects I have worked on, either as a contractor or within agencies. 
+Text: I have been building websites and web applications for the last ten years, initially as a designer and then also as a software engineer. This website showcases a selection of projects I have worked on, either as a contractor or at an agency. 
 
 ----
 
@@ -10,7 +10,7 @@ Engineering: JavaScript, D3, Angular, Backbone, Leaflet, Node / Express, MongoDB
 
 ----
 
-Design: UX and UI design, brand identity, typography, grids, data-visualization, Adobe Creative Suite (Ai, Ps, Id, Ae), Cinema 4d.
+Design: UX and UI design, brand identity, typography, grids, data visualization, Adobe Creative Suite (Ai, Ps, Id, Ae), Cinema 4d.
 
 ----
 
@@ -26,3 +26,4 @@ Links:
 - (link: http://instapaper.com/p/francoisromain text: Instapaper)
 - (link: http://flickr.com/francois-romain text: Flickr)
 - (link: http://linkedin.com/in/francoisromain text: Linkedin)
+- (link: http://de-signal.tumblr.com/ text: Tumblr)

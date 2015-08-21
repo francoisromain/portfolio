@@ -1,0 +1,22 @@
+Title: Cooper Square Hotel
+
+----
+
+Date: 2009-12-01
+
+----
+
+Type: website
+
+----
+
+Description: Website for New York's Cooper Square Hotel.
+
+
+----
+
+Role: design, development
+
+----
+
+Technologies: Wordpress, jQuery 
